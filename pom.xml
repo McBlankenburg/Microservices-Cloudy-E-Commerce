@@ -9,6 +9,11 @@
     <groupId>com.cloudy_microservices</groupId>
     <artifactId>com.cloudy_microservices</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>customer</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
