@@ -17,7 +17,7 @@ public record CustomerController(CustomerService customerService) {
     }
 
     @GetMapping
-    public List<Customer> getCustomer(){
+    public List<Customer> getCustomers(){
         return customerService.getCustomers();
     }
 
