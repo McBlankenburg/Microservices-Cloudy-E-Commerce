@@ -20,4 +20,12 @@ public record CustomerController(CustomerService customerService) {
     public List<Customer> getCustomer(){
         return customerService.getCustomers();
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteCustomer(@PathVariable Long id) {
+        log.info("deleted customer");
+        customerService.deleteCustomerById(id);
+    }
+
+    // todo: add response code information
 }
